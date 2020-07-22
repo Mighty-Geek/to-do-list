@@ -23,11 +23,19 @@ form {
     align-items: center;
 }
 
+form input {
+    border-color: #fda085;
+}
 form input, button{
     padding: 0.5rem;
     font-size: 2rem;
-    border: none;
     background: white;
+}
+
+form button {
+    border: none;
+    color: #fda085;
+    background-color:white;
 }
 
 form {
@@ -48,8 +56,8 @@ form button:hover {
     align-items: center;
 }
 
-.todoList {
-    min-width: 30%;
+.todo-list {
+    min-width: 40%;
     list-style: none;
 }
 
@@ -98,40 +106,4 @@ form button:hover {
 .fall {
    transform: translateY(8rem) rotateZ(20deg);
    opacity: 0;
-}
-
-select {
-    -webkit-appearence: none;
-    -moz-apperance: none;
-    appearance: none;
-    outline: none;
-    border:none;
-}
-
-.select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-select {
-    color: #ff6f47;
-    width: 10rem;
-    cursor: pointer;
-    padding: 1rem;
-}
-
-.select::after {
-    content: "\25BC";
-    position: absolute;
-    background: #ff6f47;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.select:hover::after {
-    background: white;
-    color: #ff6f47;
 }
